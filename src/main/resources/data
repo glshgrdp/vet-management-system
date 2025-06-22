@@ -1,0 +1,50 @@
+INSERT INTO doctors (id, name, phone, email, address, city) VALUES
+    (1, 'Mehmet Kaya', '05001112233', 'mehmet.kaya@vetclinic.com', 'Atatürk Cad. No:5', 'İstanbul'),
+    (2, 'Ayşe Demir', '05002223344', 'ayse.demir@vetclinic.com', 'Cumhuriyet Mah. 12', 'Ankara'),
+    (3, 'Ahmet Yılmaz', '05003334455', 'ahmet.yilmaz@vetclinic.com', 'Çankaya Sok. 7', 'İzmir'),
+    (4, 'Fatma Şen', '05004445566', 'fatma.sen@vetclinic.com', 'Gazi Bulvarı 15', 'Bursa'),
+    (5, 'Ali Öz', '05005556677', 'ali.oz@vetclinic.com', 'Atakum Cad. 21', 'Samsun');
+
+INSERT INTO customers (id, name, phone, email, address, city) VALUES
+    (1, 'Zeynep Yıldız', '05551112233', 'zeynep.yildiz@gmail.com', 'Ortaköy Mah. 5', 'İstanbul'),
+    (2, 'Kemal Arslan', '05552223344', 'kemal.arslan@hotmail.com', 'Yenimahalle 10', 'Ankara'),
+    (3, 'Elif Kaya', '05553334455', 'elif.kaya@yahoo.com', 'Konak Sok. 2', 'İzmir'),
+    (4, 'Burak Demir', '05554445566', 'burak.demir@gmail.com', 'Nilüfer Cad. 8', 'Bursa'),
+    (5, 'Aylin Tekin', '05555556677', 'aylin.tekin@hotmail.com', 'Atakum Mah. 4', 'Samsun');
+
+INSERT INTO animals (id, name, species, breed, gender, colour, date_of_birth, customer_id) VALUES
+    (1, 'Pamuk', 'Kedi', 'Van Kedisi', 'Dişi', 'Beyaz', '2018-06-15', 1),
+    (2, 'Karabas', 'Köpek', 'Golden Retriever', 'Erkek', 'Sarı', '2019-03-21', 2),
+    (3, 'Minnak', 'Kedi', 'Tekir', 'Dişi', 'Gri', '2020-01-10', 3),
+    (4, 'Duman', 'Köpek', 'Kangal', 'Erkek', 'Kahverengi', '2017-11-05', 4),
+    (5, 'Boncuk', 'Kedi', 'British Shorthair', 'Dişi', 'Mavi', '2021-09-12', 5);
+
+INSERT INTO vaccines (id, name, code, protection_start_date, protection_finish_date, animal_id) VALUES
+    (1, 'Kuduz Aşısı', 'KDS123', '2023-01-01', '2024-01-01', 1),
+    (2, 'Hepatit Aşısı', 'HPT456', '2023-02-01', '2024-02-01', 2),
+    (3, 'Parvovirüs Aşısı', 'PRV789', '2023-03-01', '2024-03-01', 3),
+    (4, 'Leptospirosis Aşısı', 'LPT321', '2023-04-01', '2024-04-01', 4),
+    (5, 'Corona Aşısı', 'CRN555', '2023-05-01', '2024-05-01', 5);
+
+INSERT INTO available_dates (id, available_date, doctor_id) VALUES
+    (1, '2025-06-20', 1),
+    (2, '2025-06-21', 2),
+    (3, '2025-06-22', 3),
+    (4, '2025-06-23', 4),
+    (5, '2025-06-24', 5);
+
+INSERT INTO appointments (id, appointment_date, animal_id, doctor_id) VALUES
+    (1, '2025-06-20 09:00:00', 1, 1),
+    (2, '2025-06-21 10:00:00', 2, 2),
+    (3, '2025-06-22 11:00:00', 3, 3),
+    (4, '2025-06-23 14:00:00', 4, 4),
+    (5, '2025-06-24 15:00:00', 5, 5);
+
+
+ INSERT INTO cities (id, name) VALUES
+        (1, 'İstanbul'),
+        (2, 'Ankara'),
+        (3, 'İzmir'),
+        (4, 'Bursa'),
+        (5, 'Antalya');
+

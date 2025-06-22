@@ -1,0 +1,133 @@
+{
+  "info": {
+    "_postman_id": "60e46ee5-edcb-40e0-94d1-cdbfbcb461e3",
+    "name": "Veteriner Yönetim Sistemi API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45617712",
+    "_collection_link": "https://www.postman.com/gulsah-3792806/workspace/my-workspace/collection/45617712-60e46ee5-edcb-40e0-94d1-cdbfbcb461e3?action=share&source=collection_link&creator=45617712"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:9090/api/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "customers"
+          ]
+        },
+        "description": "Get All Customers"
+      },
+      "response": []
+    },
+    {
+      "name": "Create New Customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Ayşe Korkmaz\",\r\n  \"phone\": \"05554443322\",\r\n  \"mail\": \"ayse@gmail.com\",\r\n  \"address\": \"Kadıköy Mahallesi No:7\",\r\n  \"city\": \"İstanbul\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9090/api/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Customer by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "GET http://localhost:9090/api/customers/1",
+          "protocol": "GET http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "customers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Customer",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "PUT http://localhost:9090/api/customers/1",
+          "protocol": "PUT http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "customers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Customer",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "DELETE http://localhost:9090/api/customers/1",
+          "protocol": "DELETE http",
+          "host": [
+            "localhost"
+          ],
+          "port": "9090",
+          "path": [
+            "api",
+            "customers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
